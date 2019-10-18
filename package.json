@@ -1,0 +1,38 @@
+{
+  "name": "react-pagedown",
+  "version": "1.0.0",
+  "description": "PageDown editor (formerly WMD) as a React component.",
+  "main": "dist/Pagedown.js",
+  "files": ["dist"],
+  "types": "dist/Pagedown.d.ts",
+  "scripts": {
+    "prepare": "tsc",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/gwillz/react-pagedown"
+  },
+  "keywords": [
+    "react",
+    "pagedown",
+    "wmd",
+    "showdown",
+    "typescript"
+  ],
+  "author": "Gwilyn Saunders",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "@types/showdown": "^1.9.3",
+    "express": "^4.17.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@nixster/pagedown": "^1.0.2"
+  }
+}
