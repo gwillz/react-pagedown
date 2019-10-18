@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "PageDown editor (formerly WMD) as a React component.",
   "main": "dist/Pagedown.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "types": "dist/Pagedown.d.ts",
   "scripts": {
     "prepare": "tsc",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "node serve.js",
+    "dev": "webpack --mode development --entry ./demo.js --output demo/index.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +33,14 @@
     "express": "^4.17.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {
     "@nixster/pagedown": "^1.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
   }
 }
